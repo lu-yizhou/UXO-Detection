@@ -1,0 +1,22 @@
+data:
+  data_path: path/to/dir/all_data.npy
+  label_path: path/to/dir/all_label.npy
+  test_data_path: path/to/test/dir/all_data.npy
+  test_label_path: path/to/test/dir/all_label.npy
+  train_data_path: path/to/train/dir/all_data.npy
+  train_label_path: path/to/train/dir/all_label.npy
+  window_size: 32
+  window_step: 24
+model:
+  hidden_size: 128
+  num_classes: 2
+  num_layers: 3
+training:
+  epoch_num: 50
+  learning_rate: 0.001
+  max_val: 80000.0
+  min_val: -15000.0
+  test_batch_size: 64
+  train_batch_size: 64
+  train_ratio: 0.7
+  weight_decay: 5.0e-05
